@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NBFC Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER WITH LOGO -->
+        <div class="header">
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Company Logo" class="logo">
+            <h1>MAFIL LOAN ASSISTANT</h1>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <footer class="footer">
+    Designed by QA Team
+</footer>
+
+</body>
+
+</html>
